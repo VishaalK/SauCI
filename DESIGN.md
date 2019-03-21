@@ -57,3 +57,7 @@ The minimally viable product right now is a single-node (locally hosted) system 
 # Encountered Challenges
 
 1. Not letting my previous experience and familiarity with technologies bias my analysis of the options for this service. For example, my initial assumption is to build it in Docker, since it has a lot of benefits, and to use a relational database backend. This is my instinct, and it seems correct (but I haven't even written anything).
+
+# Development Log
+
+Installed Django and created a Django project. This needs to be version controlled, and if spun up across multiple nodes, will need to have set up and installation in it's Docker image.
