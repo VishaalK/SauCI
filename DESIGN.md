@@ -53,11 +53,16 @@ What are our load parameters? Simultaneously running builds. Not all builds are 
 
 The minimally viable product right now is a single-node (locally hosted) system that when I push to a local Git repository, it runs the tests, saves the results to a database (and logs to some file on disk), and lets me view them in a locally hosted web application.
 
-
 # Encountered Challenges
 
 1. Not letting my previous experience and familiarity with technologies bias my analysis of the options for this service. For example, my initial assumption is to build it in Docker, since it has a lot of benefits, and to use a relational database backend. This is my instinct, and it seems correct (but I haven't even written anything).
 
+2. On Mac OS X there are a large number of ways to install Python, and a large number of ways to configure "virtual environments" for isolation between projects.
+
+3. 
+
 # Development Log
 
 Installed Django and created a Django project. This needs to be version controlled, and if spun up across multiple nodes, will need to have set up and installation in it's Docker image.
+
+I had to consolidate my Python installations on my MacBook. I had 3 (or 4) different ones. There were also a ton of tools for isolating environments such as virtualenv and whatnot that I didn't necessarily have to deal with when doing C++ and C# (or maybe I just don't remember). JavaScript and TypeScript also somewhat have this problem, and I'd be interested to know what uses case exist for these tools and how the other languages in my toolbox solve them.
