@@ -47,6 +47,8 @@ What are our load parameters? Simultaneously running builds. Not all builds are 
 
 # Monitoring of System
 
+We can use Mixpanel to track usage of the web site. I'm not sure Mixpanel's capabilities 
+
 # Technical Milestones
 
 ## Minimally viable product
@@ -66,3 +68,5 @@ The minimally viable product right now is a single-node (locally hosted) system 
 Installed Django and created a Django project. This needs to be version controlled, and if spun up across multiple nodes, will need to have set up and installation in it's Docker image.
 
 I had to consolidate my Python installations on my MacBook. I had 3 (or 4) different ones. There were also a ton of tools for isolating environments such as virtualenv and whatnot that I didn't necessarily have to deal with when doing C++ and C# (or maybe I just don't remember). JavaScript and TypeScript also somewhat have this problem, and I'd be interested to know what uses case exist for these tools and how the other languages in my toolbox solve them.
+
+The Mixpanel account has to be configured in a specific way to interact with our app, so there has to be a app secret stored in some secure place. Environment variables seems the best way to do this.
