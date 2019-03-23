@@ -34,6 +34,7 @@ Column store (worth exploring for different portions)
 
 Stream based (Kafka + Materialized views?)
 
+## Data Models
 
 # Analysis of System
 
