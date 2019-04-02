@@ -36,6 +36,8 @@ Stream based (Kafka + Materialized views?)
 
 ## Data Models
 
+
+
 # Analysis of System
 
 ## Reliability
@@ -62,7 +64,23 @@ The minimally viable product right now is a single-node (locally hosted) system 
 
 2. On Mac OS X there are a large number of ways to install Python, and a large number of ways to configure "virtual environments" for isolation between projects.
 
-3. 
+3. What files need to be .gitignore'd in a Python/Django project? There are .pyc (compiled Python) and __pycache__ files, but will investigate more as we go.
+
+4. Adjusting to Python OOP from C++ OOP as it is quite different. For instance:
+
+```
+class Derived(Base):
+    ...
+```
+
+versus 
+
+```
+class Derived : public Base {
+    public:
+        Derived() { ... }
+}
+```
 
 # Development Log
 
@@ -71,3 +89,6 @@ Installed Django and created a Django project. This needs to be version controll
 I had to consolidate my Python installations on my MacBook. I had 3 (or 4) different ones. There were also a ton of tools for isolating environments such as virtualenv and whatnot that I didn't necessarily have to deal with when doing C++ and C# (or maybe I just don't remember). JavaScript and TypeScript also somewhat have this problem, and I'd be interested to know what uses case exist for these tools and how the other languages in my toolbox solve them.
 
 The Mixpanel account has to be configured in a specific way to interact with our app, so there has to be a app secret stored in some secure place. Environment variables seems the best way to do this.
+
+I created some basic Django Models as per the tutorial for the Polls app. 
+
