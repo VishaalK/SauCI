@@ -2,3 +2,4 @@
 SauCI/__pycache__/
 SauCI/polls/__pycache__/
 *.pyc
+db.sqlite3
