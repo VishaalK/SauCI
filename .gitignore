@@ -1,3 +1,4 @@
 # db.sqlite3
 SauCI/__pycache__/
+SauCI/polls/__pycache__/
 *.pyc
