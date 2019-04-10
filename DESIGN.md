@@ -95,3 +95,5 @@ I created some basic Django Models as per the tutorial for the Polls app.
 I tried to get it up and running on my Windows machine since I didn't have my laptop. That means installing Python3 (and making sure the version of Python is the same across my Macbook and my Windows box), then installing Django via pip OR pip3. Where does pip install modules? site-packages? And what environment variables control this on Windows?
 
 Also why is there no requirements.txt in a Django application? Is it because I haven't installed any other libraries save for the one Django needs?
+
+Time to wrap up in a Dockerfile!
