@@ -96,4 +96,5 @@ I tried to get it up and running on my Windows machine since I didn't have my la
 
 Also why is there no requirements.txt in a Django application? Is it because I haven't installed any other libraries save for the one Django needs?
 
-Time to wrap up in a Dockerfile!
+Time to wrap up in a Dockerfile, and also get Mixpanel going.
+
