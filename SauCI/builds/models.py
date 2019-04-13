@@ -8,3 +8,6 @@ class Build(models.Model):
     completed = models.BooleanField(default=False)
     created_at = models.DateTimeField(null=True)
     completed_at = models.DateTimeField(null=True)
+
+    def __str__(self):
+        return f"Build {self.id}: Completed: {self.completed}. Started: {self.created_at}, Completed: {self.completed_at}"

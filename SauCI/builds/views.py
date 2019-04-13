@@ -9,3 +9,9 @@ def index(request):
     response = "You're looking at ids %s"
     ids = ', '.join([str(build.id) for build in builds])
     return HttpResponse(response % ids)
+
+def detail(request, build_id):
+    build = Build.objects.get(pk=build_id)
+    context = {'build': build}
+    return render(request, 'builds/detail.html', context)
+
