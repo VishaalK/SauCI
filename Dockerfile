@@ -5,3 +5,4 @@ WORKDIR /SauCI
 COPY requirements.txt /SauCI/
 RUN pip install -r requirements.txt
 COPY . /SauCI/
+WORKDIR /SauCI/SauCI
