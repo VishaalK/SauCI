@@ -1,1 +1,1 @@
-245c5b91-7d58-4d2d-88e0-d01e5f9c88ea -> Mixpanel Test User Guid
+'245c5b91-7d58-4d2d-88e0-d01e5f9c88ea' -> Mix

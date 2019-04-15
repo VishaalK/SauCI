@@ -1,0 +1,10 @@
+<h3> Builds: </h3>
+{% if builds %}
+    <ul>
+    {% for build in builds %}
+        <li><a href="{% url 'builds:detail' build.id %}">{{ build.id }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No builds are available.</p>
+{% endif %}
