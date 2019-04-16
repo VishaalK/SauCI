@@ -1,1 +1,5 @@
-{{ build }}
+<form action="{% url 'builds:start' build.id %}" method="post" name="start">
+    {% csrf_token %}
+    {{ build }}
+    <button type="submit">Start</button>
+</form>

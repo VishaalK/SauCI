@@ -6,4 +6,5 @@ app_name = 'builds'
 urlpatterns = [
     path('', views.index, name='index'),
     path('<uuid:build_id>/', views.detail, name='detail'),
+    path('<uuid:build_id>/start/', views.start, name='start'),
 ]

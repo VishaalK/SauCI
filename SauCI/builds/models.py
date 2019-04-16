@@ -10,4 +10,4 @@ class Build(models.Model):
     completed_at = models.DateTimeField(null=True)
 
     def __str__(self):
-        return f"Build {self.id}: Completed: {self.completed}. Started: {self.created_at}, Completed: {self.completed_at}"
+        return f"Build {self.id}: completed: {self.completed}. created_at: {self.created_at}, completed_at: {self.completed_at}"
