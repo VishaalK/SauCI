@@ -19,7 +19,7 @@ def start(request, build_id):
     try:
         build.created_at = datetime.now()
         build.save()
-    except :
+    except:
         return render(request, 'builds/detail.html', {'build': build})
     else:
         return HttpResponseRedirect(reverse('builds:detail', args=(build_id,)))
