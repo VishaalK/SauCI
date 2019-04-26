@@ -119,4 +119,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
-STATIC_URL = '/static/'
+STATIC_URL = 'http://storage.googleapis.com/sauci/static/'
+STATIC_ROOT = 'static/'
+
+# docker build -t gcr.io/strong-matrix-237304/polls .
