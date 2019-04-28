@@ -25,7 +25,7 @@ SECRET_KEY = '*r5o_faqet#8@=%r(ufih4nw-w8jn-6m6s6)m1wt7kvv$k(jhw'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*', '104.199.122.44']
 
 
 # Application definition
@@ -122,4 +122,5 @@ USE_TZ = True
 STATIC_URL = 'http://storage.googleapis.com/sauci/static/'
 STATIC_ROOT = 'static/'
 
-# docker build -t gcr.io/strong-matrix-237304/polls .
+# docker build -t gcr.io/strong-matrix-237304/sauci .
+# docker push gcr.io/strong-matrix-237304/sauci
